@@ -1,5 +1,5 @@
 
-# Sistema de seguimiento en linea
+# Sistema de seguimiento en línea
 
 Es un sistema creado en PHP, con validaciones en Javascript y base de datos MySql.
 
