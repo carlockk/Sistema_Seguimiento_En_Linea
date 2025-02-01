@@ -1,0 +1,513 @@
+:root {
+    --title-color: #000000; /* Color de los títulos por defecto */
+    --background-color: #f4f4f9; /* Color de fondo por defecto */
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+}
+
+
+/* Header */
+header {
+    background-color: #98cef2;
+    color: white;
+    padding: 10px;
+}
+
+/* Barra de navegación */
+nav {
+    background-color: #fff;
+    padding: 15px 0;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #003399;
+    padding-left: 20px;
+}
+
+
+/* Contenedor general */
+.container {
+    width: 97%;
+    margin: auto;
+    padding: 20px;
+}
+
+.form-column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    background-color: #f9f9f9;
+}
+
+
+/* Formulario */
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin-left:40px;
+    margin-right:40px;
+}
+
+
+/* Formulario */
+.form-grid2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-left:40px;
+    margin-right:40px;
+}
+
+.form-column2 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    background-color: #f9f9f9;
+}
+
+
+/* Botones */
+button {
+    background-color: #d4edda;
+    color: #000;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 5px;
+}
+
+
+button:hover {
+    background-color: #fff3cd;
+}
+
+/* Botones personalizados para escritorio */
+.btn-crear-pedido {
+    color: #003399;
+    width: auto; /* Ajusta los botones dentro del grupo */
+        margin-right: 5px; /* Margen de 2px */
+        cursor:pointer;
+}
+.btn-crear-pedido:hover {
+    color:#000;
+}
+
+.btn-actualizar-estado {
+    color: #003399;
+    width: auto; /* Ajusta los botones dentro del grupo */
+        margin-right: 5px; /* Margen de 2px */
+        cursor:pointer;
+}
+.btn-actualizar-estado:hover {
+    color:#000;
+}
+
+.btn-crear-estados {
+    color: #003399;
+    width: auto; /* Ajusta los botones dentro del grupo */
+        margin-right: 5px; /* Margen de 2px */
+        cursor:pointer;
+}
+.btn-crear-estados:hover {
+    color:#000;
+}
+
+.btn-registros-pedidos {
+    color: #003399;
+    width: auto; /* Ajusta los botones dentro del grupo */
+        margin-right: 5px; /* Margen de 2px */
+        cursor:pointer;
+}
+.btn-registros-pedidos:hover {
+    color:#000;
+}
+
+.btn-seguimiento {
+    color: #003399;
+    width: auto; /* Ajusta los botones dentro del grupo */
+        margin-right: 5px; /* Margen de 2px */
+        cursor:pointer;
+}
+.btn-seguimiento:hover {
+    color:#000;
+}
+
+
+
+/* Botones personalizados para movil */
+.btn-crear-pedido2 {
+    background-color: #d4edda;
+    color: #155724;
+    width: auto; /* Ajusta los botones dentro del grupo */
+        margin-right: 5px; /* Margen de 2px */
+}
+.btn-crear-pedido2:hover {
+    background-color: #c6decc;
+}
+
+.btn-actualizar-estado2 {
+    background-color: #fff3cd;
+    color: #856404;
+    width: auto; /* Ajusta los botones dentro del grupo */
+        margin-right: 5px; /* Margen de 2px */
+}
+.btn-actualizar-estado2:hover {
+    background-color: #f8dd87;
+}
+
+.btn-crear-estados2 {
+    background-color: #fdecea;
+    color: #721c24;
+    width: auto; /* Ajusta los botones dentro del grupo */
+        margin-right: 5px; /* Margen de 2px */
+}
+.btn-crear-estados2:hover {
+    background-color: #f6d3cf;
+}
+
+.btn-registros-pedidos2 {
+    background-color: #d1ecf1;
+    color: #0c5460;
+    width: auto; /* Ajusta los botones dentro del grupo */
+        margin-right: 5px; /* Margen de 2px */
+}
+.btn-registros-pedidos2:hover {
+    background-color: #b7dfe7;
+}
+
+.btn-seguimiento2 {
+    color: #155724;
+    width: auto; /* Ajusta los botones dentro del grupo */
+        margin-right: 5px; /* Margen de 2px */
+        cursor:pointer;
+}
+.btn-seguimiento2:hover {
+    background-color: #c6decc;
+}
+
+
+/* Formularios */
+form {
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    color: #444;
+}
+
+input[type="text"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+select {
+    appearance: none;
+    background-color: #f9f9f9;
+}
+
+/* Estilo para el icono de hamburguesa */
+    .hamburger,
+    .sliding-menu {
+    display: none;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 6px 6px 6px 6px;
+    color:#000;
+    /*background-color:#e0f3ff;
+    border-radius: 5px;*/
+}
+
+.hamburger:hover {
+        color:#d4edda;
+    }
+
+/* Menú horizontal de escritorio (visible solo en PC) */
+.desktop-menu {
+    display: flex;
+    gap: 10px;
+    margin-left: auto;
+}
+
+    
+
+/* Menú deslizante para móviles (oculto inicialmente) */
+.sliding-menu {
+    position: fixed;
+    top: 0;
+    right: -100%; /* Oculto inicialmente */
+    width: 250px;
+    height: 100%;
+    background-color: white;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    transition: right 0.5s ease;
+}
+
+/* Mostrar el menú cuando está activado */
+.sliding-menu.visible {
+    right: 0;
+}
+
+/* Estilos para la barra de navegación */
+nav {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    height:80px;
+}
+
+/* Estilos para el logo */
+.logo {
+    background-image: url('square.png');
+    height:71px;
+    width: 296px;
+}
+
+
+/* Estilos del botón de cerrar "X" */
+.close-btn2 {
+    margin-bottom: 25px;
+    font-size: 24px;
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    cursor: pointer;
+}
+
+
+
+/* Media query para dispositivos móviles */
+@media (max-width: 768px) {
+    
+     .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .form-column {
+        border: none;
+        background-color: transparent;
+        padding: 0;
+    }
+
+    .form-column label,
+    .form-column input,
+    .form-column select {
+        margin-bottom: 5px;
+    }
+    
+    
+     .form-grid2 {
+        grid-template-columns: 1fr;
+        margin-left: auto; margin-right: auto;
+    }
+
+    .form-column2 {
+        border: none;
+        background-color: transparent;
+        padding: 0;
+    }
+
+    .form-column2 label,
+    .form-column2 input,
+    .form-column2 select {
+        margin-bottom: 5px;
+    }
+    
+    
+    
+    .container {
+        width: 100%; /* Ocupa todo el ancho disponible en dispositivos móviles */
+        padding: 10px; /* Reduce el padding para adaptarse mejor */
+    }
+
+    nav {
+        flex-direction: row; /* Mantener flex-direction en row */
+        justify-content: center; /* Centrar los elementos horizontalmente */
+        position: relative; /* Permite que el menú de hamburguesa flote */
+        margin-left: 2px; /* Margen de 2px en el lado izquierdo */
+        margin-right: 2px; /* Margen de 2px en el lado derecho */
+    }
+
+    nav .menu {
+        display: flex;
+        flex-direction: column; /* Los items del menú en columna */
+        gap: 10px;
+        padding-left: 2px; /* Margen de 2px en el lado izquierdo */
+        padding-right: 2px; /* Margen de 2px en el lado derecho */
+        width: 100%; /* Asegurarse de que ocupe todo el ancho disponible */
+    }
+
+    nav .menu a {
+        text-decoration: none;
+        color: #333;
+        font-weight: 500;
+        transition: color 0.3s;
+        padding: 10px;
+        text-align: center;
+    }
+
+    nav .menu a:hover {
+        color: #007bff;
+    }
+    
+    .logo {
+        margin-left: auto;
+        margin-right: auto;
+        height: 71px; /* Ajusta la altura si es necesario */
+        width: 296px;
+        max-width: 80%; /* Ajustar tamaño máximo del logo en móviles */
+    }
+
+    .button-group {
+        width: 99%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .button-group button {
+        text-align: center;
+        padding: 15px 10px;
+        font-size: 16px;
+    }
+
+/* Mostrar el icono de hamburguesa en móviles */
+    .hamburger {
+        display: block;
+        float: right;
+    }
+
+    /* Ocultar el menú horizontal en móviles */
+    .desktop-menu {
+        display: none;
+    }
+
+    /* Mostrar solo el menú deslizante en móviles */
+    .sliding-menu {
+        display: block;
+    }
+
+}
+
+.section {
+    display: none;
+    padding: 20px;
+
+}
+.section.active {
+    display: block;
+}
+.container {
+    padding: 20px;
+}
+
+.close-btn {
+    cursor: pointer;
+    color: #333;
+    font-size: 20px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+
+/* Contenedor para las opciones de color */
+.color-settings {
+    position: fixed;
+    top: 50px;
+    right: -300px; /* Fuera de la pantalla inicialmente */
+    width: 250px;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: right 0.5s ease; /* Animación de desplazamiento */
+}
+
+/* Cuando el contenedor esté visible */
+.color-settings.visible {
+    right: 20px; /* Mostrar al borde derecho de la pantalla */
+}
+
+/* Estilo del botón de cambio de estilos */
+#toggleColorOptions {
+    position: fixed; /* Para que siempre esté visible 
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    z-index: 1000;*/ /* Asegura que esté sobre otros elementos 
+}
+
+#toggleColorOptions:hover {
+    background-color: #0056b3;
+}*/
+}
+.rut-container label {
+    margin-right: 10px; /* Separar la etiqueta del primer campo */
+}
+
+.rut-container input[type="text"] {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#rut_numero {
+    width: 85%; /* Campo más largo */
+}
+
+#rut_dv {
+    width: 10%; /* Campo más corto */
+    text-align: center; /* Centrar el contenido */
+}
+
+.rut-container span {
+    font-size: 18px;
+    line-height: 1;
+}

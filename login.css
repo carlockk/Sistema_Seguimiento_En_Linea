@@ -1,0 +1,140 @@
+/* Fondo general (añade la imagen aquí) */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #4A47A3; /* Color similar al fondo de la imagen */
+    /*background-image: url('https://iphoneros.com/wp-content/uploads/2020/03/10-14-Mojave-13.jpg');*/
+    background-image: url(dis2.jpg) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Caja de inicio de sesión */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.login-box {
+    background-color: rgba(0, 0, 0, 0.60);
+    /*background-color: rgba(255, 255, 255, 0.15);*/
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(18px);
+    text-align: center;
+    width: 320px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: white;
+    /*color: black;*/
+    margin-bottom: 1rem;
+}
+
+/* Estilos de los inputs */
+.input-group {
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+label {
+    display: block;
+    font-size: 0.9rem;
+    color: #ddd;
+    /*color: #000000;*/
+    margin-bottom: 0.5rem;
+}
+
+.input-icon {
+    position: relative;
+}
+
+.input-icon input[type="text"],
+.input-icon input[type="password"] {
+    width: calc(100% - 0.5rem); /* Ajuste del ancho para que quede dentro del contenedor */
+    padding: 0.75rem;
+    padding-left: 2.5rem; /* Espacio para el ícono */
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #fff;
+    /*color: #262626;*/
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    box-sizing: border-box;
+}
+
+.icon {
+    position: absolute;
+    left: 0.75rem;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1rem;
+    height: 1rem;
+    color: #ddd;
+    /*color: #3b3b3b;*/
+}
+
+button[type="button"] {
+    position: absolute;
+    right: 0.75rem;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 0.75rem;
+    color: #ddd;
+    /*color: #000000;*/
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+button[type="button"]:hover {
+    color: #fff;
+    /*color: #7e428a;*/
+}
+
+/* Botón de envío */
+button[type="submit"] {
+    width: 100%;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #fff;
+    background: linear-gradient(90deg, #3b82f6, #2563eb);
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background: linear-gradient(90deg, #2563eb, #3b82f6);
+}
+
+/* Mensaje de error */
+.error-message {
+    color: red;
+    margin-top: 1rem;
+}
+
+/* Texto adicional */
+.forgot-password,
+.privacy-policy {
+    color: #ddd;
+    font-size: 0.8rem;
+    margin-top: 1rem;
+}
+
+.privacy-policy {
+    margin-top: 0.5rem;
+}
