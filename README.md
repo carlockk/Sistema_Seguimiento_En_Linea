@@ -18,4 +18,4 @@ El sistema permite:
 
 Tambien validar que el rut ingresado sea válido y si existe o ya tiene asociada alguna orden, dara un alert dando aviso de que el usuario existe y si quiere cargar los datos personales ya que los de compra quizas sean para una nueva orden.
 
-Bienvenidos al sistema de seguimiento.
+Bienvenidos al sistema de seguimiento. Espero les sirva y si pueden seguir mejorandolo, sería espectacular....
